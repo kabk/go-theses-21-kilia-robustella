@@ -44,7 +44,11 @@ a:hover {
   font-weight: normal;
 }
 
-
+@font-face {
+  font-family: Noto;
+  src: url('fonts/NotoSans-Regular.ttf');
+  font-weight: normal;
+}
 
 
 html {
@@ -55,7 +59,7 @@ html {
 body {
   width: 100%;
   background: rgba(255, 255, 255, 0);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto', sans-serif;
   line-height: 1.35;
   letter-spacing: -0.02em;
 }
