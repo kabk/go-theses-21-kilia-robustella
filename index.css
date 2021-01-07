@@ -1,0 +1,264 @@
+/*TODO:
+
+– Make all chapters divs, e.g <div class='chapter1'></div>
+– Make all paragraphs in a seperate <p> tag
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  text-decoration-color: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: Molle;
+  src: url('fonts/Molle-Italic.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Akzidenz;
+  src: url('fonts/Akzidenz-grotesk-ce-roman.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: AkzidenzBold;
+  src: url('fonts/Akzidenz-grotesk-bold.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Berthold;
+  src: url('fonts/Berthold-akzidenz-grotesk-be-extra-bold-condensed.ttf');
+  font-weight: normal;
+}
+
+
+html {
+  width: 100%;
+  font-size: 20px;
+}
+
+body {
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  font-family: 'AkzidenzBold', sans-serif;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.container {
+  overflow-y: hidden;
+}
+
+/* =========================
+      TITLE SECTION
+=========================== */
+
+.title {
+  position: fixed;
+  padding: 2%;
+  left: 50%;
+  top:0%;
+  width: 100%;
+  transform: translateX(-50%);
+
+  font-family: 'Berthold', sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 0.5em;
+  letter-spacing: -0.06em;
+  background-color: rgb(255, 248, 152);
+  border-bottom: none;
+
+}
+
+.title > h1 {
+  display: inline-block;
+  font-size: 4em;
+  font-family: 'Molle', monospace;
+}
+
+.menu {
+  display: flex;
+  display: none;
+  justify-content: space-between;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: rgb(255, 251, 152);
+  border-top: 1px solid black;
+  letter-spacing: -0.04em;
+
+}
+
+.tableofcontents {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+
+  font-family: 'Molle', monospace;
+  color: black;
+  text-align: left;
+  font-size: 0.7em;
+  background-color: rgb(255, 255, 255);
+}
+
+.menu li {
+  color: black;
+  font-size: 1.2em;
+  display: inline-block;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -160px;
+  visibility: hidden;
+}
+
+
+/* =========================
+      MAIN TEXT SECTION
+=========================== */
+.infobox {
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding-top: 20vh; /* compensate for the fixed title */
+  padding-left: 6vw;
+  padding-right: 6vw;
+  padding-bottom: 10vh;
+
+  max-width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: none;
+}
+
+
+
+h1 {
+  font-family: 'Berthold', sans-serif;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+
+h2 {
+  font-family: 'Molle';
+  text-align: center;
+  letter-spacing: -0.03em;
+  padding: 1%;
+}
+
+h3 {
+  font-family: 'AkzidenzBold';
+  text-align: left;
+  text-decoration: underline;
+  letter-spacing: -0.03em;
+  padding: 1%;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 4vh;
+  font-family: 'Akzidenz', sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  font-size: 15px;
+
+}
+
+.chapter {
+  margin-bottom: 120px; /* space between chapters */
+}
+
+.description {
+  font-size: 10px;
+}
+
+.image-footnotes {
+  font-family: 'akzidenz';
+  font-size: 12px;
+  padding-top: 3px;
+  padding-left: 18px;
+  padding-right: 18px;
+  color: rgb(134, 134, 135);
+  overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    hyphenate-limit-chars: 9 3 3;
+}
+
+.images {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  z-index: 1;
+}
+
+
+img {
+  width:100%;
+}
+
+p {
+  text-indent: 2em;
+}
+
+ol {
+  padding: 6vw;
+}
+
+ul {
+  padding: 6vw;
+}
+
+
+/* =========================
+      RESPONSIVE SECTION
+=========================== */
+
+/* TODO: Responsiveness (It should stay last) */
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 20px;
+  }
+  .infobox {
+    padding-top: 10vh; /* compensate for the fixed title */
+
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 19px;
+  }
+}
+
+/*
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 8px;
+  }
+}
+*/
