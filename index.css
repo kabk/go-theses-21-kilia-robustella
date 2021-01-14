@@ -72,13 +72,13 @@ body {
       TITLE SECTION
 =========================== */
 
-#header {
+.bgvideo {
     position: fixed;
     width:100%;
     height: auto;
     max-width: 600px;
     position: center;
-    
+
   }
 
 
