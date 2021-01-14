@@ -72,6 +72,17 @@ body {
       TITLE SECTION
 =========================== */
 
+#header {
+    position: fixed;
+    width:100%;
+    height: auto;
+    max-width: 600px;
+    position: center;
+    
+  }
+
+
+
 .title {
   position: fixed;
   padding: 2%;
@@ -215,6 +226,8 @@ h3 {
   padding-bottom: 25px;
   z-index: 1;
 }
+
+
 
 
 img {
