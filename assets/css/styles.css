@@ -346,7 +346,7 @@ ul li {
 	}
   a {
     word-break: break-all;
-    
+
   }
 a:link,
 	a:visited,
@@ -642,7 +642,7 @@ section {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: rgb(255, 246, 153);
+	background-color: White;
 	overflow: hidden;
 	cursor: pointer
 }
