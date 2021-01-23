@@ -375,11 +375,18 @@ img {
 	font-weight: 300;
 	font-style: normal;
 }
+
+@font-face {
+  font-family: "baskerville";
+  src: url('../fonts/Baskerville.ttc');
+  font-weight: normal;
+}
+
 .f-m {
 	font-family: "Molle", cursive;
 }
 .f-b {
-	font-family: "Baskervville", serif;
+	font-family: "Baskerville", serif;
 }
 section {
 	/* background-color: green;
